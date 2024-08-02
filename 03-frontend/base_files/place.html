@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place Details</title>
+    <link rel="icon" type="image/png" href="./icon.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <a href="/"><img src="logo.png" alt="HBnB logo" width="160" height="40"></a>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="login.html" class="login-button" id="login-link">Login</a>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <main class="place-details-page">
+        <div class="centered-content">
+            <h1 class="place-title">Beautiful Beach House</h1>
+        </div>
+
+        <section id="place-details" class="place-card details-card">
+            <div class="place-info">
+                <p class="host"><b>Host:</b> John Doe</p>
+                <p class="price"><b>Price per night:</b> $150</p>
+                <p class="location"><b>Location:</b> Los Angeles, United States</p>
+                <p class="description"><b>Description:</b> A beautiful beach house with amazing views ...</p>
+                <p class="amenities"><b>Amenities:</b> WiFi, Pool, Air Conditioning</p>
+            </div>
+        </section>
+
+        <section id="reviews">
+            <h2 class="section-title">Reviews</h2>
+            <div class="review-card">
+                <p class="user-name"><b>Jane Smith:</b></p>
+                <p class="comment">Great place to stay!</p>
+                <p class="rating">Rating:
+                    <span class="star filled"></span>
+                    <span class="star filled"></span>
+                    <span class="star filled"></span>
+                    <span class="star filled"></span>
+                    <span class="star empty"></span></p>
+            </div>
+            <div class="review-card">
+                <p class="user-name"><b>Robert Brown:</b></p>
+                <p class="comment">Amazing location and very comfortable.</p>
+                <p class="rating">Rating:
+                    <span class="star filled"></span>
+                    <span class="star filled"></span>
+                    <span class="star filled"></span>
+                    <span class="star filled"></span>
+                    <span class="star filled"></span></p>
+            </div>
+        </section>
+
+        <section id="add-review">
+            <h2>Add a Review</h2>
+            <form id="review-form">
+                <label for="review-text"><b>Your Review:</b></label>
+                <textarea id="review-text" name="review-text" required></textarea>
+
+                <label for="review-rating"><b>Rating:</b></label>
+                <select id="review-rating" name="review-rating" required>
+                    <option value="0">0 Star</option>
+                    <option value="1">1 Star</option>
+                    <option value="2">2 Stars</option>
+                    <option value="3">3 Stars</option>
+                    <option value="4">4 Stars</option>
+                    <option value="5">5 Stars</option>
+                </select>
+
+                <button type="submit">Submit Review</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 HBnB Evolution. All rights reserved.</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
